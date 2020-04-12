@@ -5,11 +5,11 @@ import re
 import nltk
 import json
 
-from flask_sqlalchemy import SQLAlchemy
 from rq import Queue
 from rq.job import Job
 from worker import conn
 from flask import Flask, render_template, request, jsonify
+from flask_sqlalchemy import SQLAlchemy
 from stop_words import stops
 from collections import Counter
 from bs4 import BeautifulSoup
